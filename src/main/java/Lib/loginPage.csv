@@ -1,0 +1,8 @@
+name,xpath,url
+anj,,https://www.anhuanjia.com/
+gj,"//span[@class='tit'and contains(text(),'工具')]",
+ehs_btn,//div[2]/div[1]/div/div[1]/div/div/div/a[2],
+phone,//div[@class='v-text-field__slot']/input,
+password,//div[@class='v-text-field__slot']/input,
+next,//div[@class='v-btn__content'and text()='下一步'],
+ehs_page,"//h1[contains(text(),'智慧EHS')]",
