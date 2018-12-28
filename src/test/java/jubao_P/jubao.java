@@ -127,6 +127,7 @@ public class jubao {
 		action.sendKeys(Keys.DOWN).sendKeys(Keys.DOWN).sendKeys(Keys.ENTER).perform();
 		Thread.sleep(200);
 		//违规人部门
+//		JS强制赋值
 /*		WebElement webelement=driver.findElement(By.id("ViolateBranchID$text"));
 	    String name = "河南恒硕实业集团";
 	    webelement.click();
@@ -136,8 +137,8 @@ public class jubao {
 	    Thread.sleep(2000);*/
 		WebElement bu=spy.target_xpath(d.getCsvDate("xpath", "bumen"));
 		bu.click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[text()='河南恒硕实业集团']")).click();
+		Thread.sleep(500);
+		driver.findElement(By.xpath("//*[text()='生产部']")).click();
 //		WebElement bu_div=spy.target_xpath(d.getCsvDate("xpath", "bumen_div"));
 //		action.moveToElement(bu_div,130,14).click().perform();
 //		WebElement bu_ele=spy.target_xpath(d.getCsvDate("xpath", "bumen_tr6"));

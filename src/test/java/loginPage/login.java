@@ -34,7 +34,7 @@ import tools.swichWin;
 //		操作滚动浏览器滚动条
 		WebElement btn_ele=spy.target_xpath(d.getCsvDate("xpath", "ehs_btn"));
 //		String script = "return arguments[0].scrollIntoView();";
-		JavascriptExecutor je =(JavascriptExecutor) driver;
+		JavascriptExecutor je =(JavascriptExecutor)driver;
 //		je.executeScript(script,btn_ele);
 		je.executeScript("arguments[0].scrollIntoView();",btn_ele);
 		waiting.waitForElementIsEnable(d.getCsvDate("xpath", "ehs_btn"));
